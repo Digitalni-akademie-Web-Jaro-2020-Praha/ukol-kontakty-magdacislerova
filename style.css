@@ -10,16 +10,16 @@ body {
 
 /* ---------------------------------------------------- */
 
-.team {
+.tym {
 	display: flex;
 	flex-direction: column;
 }
 
-.photo img {
+.fotka img {
 	border-radius: 50%;
 }
 
-.member {
+.clenka {
 	border: 2px solid rgb(211, 209, 209);
 	border-radius: 5%;
 	padding: 20px;
@@ -29,34 +29,31 @@ body {
 }
 
 @media only screen and (min-width: 540px) {
-	.team {
+	.tym {
 		flex-direction: row;
 		justify-content: space-evenly;
-		align-items: flex-start;
-		
-	};
-
-	.member {
-		width: 25%;
-		
-		
 	}
+
+	.clenka {
+		width: 25%;
+	}
+
 }
 
 @media only screen and (min-width: 960px) {
-	.team {
+	.tym {
 		flex-direction: row;
 		flex-wrap: wrap;
 		
 	}
 
-	.member {
+	.clenka {
 		display: flex;
 		width: 45%; /*proč tady nejde 50%? je to kvůli paddingu a marginu?*/
 		justify-content: space-evenly;
 	}
 
-	.description {
+	.charakteristika {
 		text-align: left;
 		padding-left: 25px;
 	}
