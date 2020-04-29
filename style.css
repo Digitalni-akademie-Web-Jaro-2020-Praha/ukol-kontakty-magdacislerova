@@ -34,8 +34,8 @@ body {
   box-shadow: 0px 1px 2px #70e6ee;
 }
 
-
-@media only screen and (min-width: 540px) { /*při velkém zůžení mi přetékají fotky a text - proč?*/
+@media only screen and (min-width: 540px) {
+  /*při velkém zůžení mi jsou fotky různě veliké, proč?*/
   .tym {
     flex-direction: row;
     flex-wrap: wrap;
@@ -60,19 +60,21 @@ body {
   }
 
   .clenka {
-		width: 23%;
-		display: flex;
-		flex-direction: column;
-		padding: 10px;
-		margin: 0;
-	}
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 0;
+  }
 
-	.clenka img {
-		margin-top: 10px;
-	}
+  .clenka img {
+    margin-top: 10px;
+  }
 
-	.charakteristika {
-		text-align: center;
-		padding: 0 5px;
-		margin: 0;
-	}
+  .charakteristika {
+    text-align: center;
+    padding: 0 5px;
+    margin: 0;
+  }
+}
